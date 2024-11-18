@@ -8,7 +8,7 @@ import com.orangehrmlive.opensource_demo.tasks.VerificarTextoEnTabla;
 import com.orangehrmlive.opensource_demo.utils.EsperaImplicita;
 import io.cucumber.java.Before;
 import io.cucumber.java.ast.Cuando;
-import io.cucumber.java.es.Dado;
+import static org.junit.Assert.assertTrue;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
@@ -96,6 +96,7 @@ public class ReclutarCandidato {
     @Entonces("verifica que el candidato está en la lisa con estado del candidato es Contratado")
     public void verifica_que_el_candidato_está_en_la_lista() {
         theActorCalled("usuario").attemptsTo(ClicReclutamiento.ClicPaginaReclutamiento());
+
         theActorCalled("usuario").attemptsTo(
                 VerificarTextoEnTabla.conElTexto("test"),
                 VerificarTextoEnTabla.conElTexto("Diego Alexander Ipiales"),

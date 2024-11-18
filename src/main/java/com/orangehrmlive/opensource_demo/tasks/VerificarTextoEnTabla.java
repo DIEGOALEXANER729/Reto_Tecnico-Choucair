@@ -29,6 +29,9 @@ public class VerificarTextoEnTabla implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
+        // Imprime en consola el texto que está buscando
+        System.out.println("Buscando el texto: " + textoBuscado);
         // Obtiene todas las filas de la tabla
         ListOfWebElementFacades filas = FILAS_DE_LA_TABLA.resolveAllFor(actor);
 
@@ -49,5 +52,6 @@ public class VerificarTextoEnTabla implements Task {
 
         // Si no encontramos el texto, lo recordamos como false
         actor.remember("textoEncontrado", false);
+        System.out.println("No se encontró el texto buscado: " + textoBuscado);
     }
 }

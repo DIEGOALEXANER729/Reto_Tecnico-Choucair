@@ -9,7 +9,6 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SendKeys;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 import java.io.IOException;

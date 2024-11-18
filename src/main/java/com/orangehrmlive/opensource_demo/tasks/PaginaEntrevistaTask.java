@@ -5,7 +5,6 @@ import com.orangehrmlive.opensource_demo.utils.Excel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SendKeys;
 import net.serenitybdd.screenplay.waits.WaitUntil;
@@ -16,9 +15,7 @@ import java.util.Map;
 import static com.orangehrmlive.opensource_demo.ui.PaginaReclutarUI.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
-import net.serenitybdd.screenplay.waits.WaitUntil;
-import net.serenitybdd.screenplay.Actor;
-import org.openqa.selenium.By;
+
 
 public class PaginaEntrevistaTask  implements Task {
 
